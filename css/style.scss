@@ -780,6 +780,10 @@ body {
 .social__icons {
   cursor: pointer;
   margin-left: auto;
+
+  &:hover {
+    color: white;
+  }
 }
 
 @media screen and (max-width: 768px) {

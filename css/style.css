@@ -697,6 +697,9 @@ body img {
   cursor: pointer;
   margin-left: auto;
 }
+.social__icons:hover {
+  color: white;
+}
 
 @media screen and (max-width: 768px) {
   .footer__links {
