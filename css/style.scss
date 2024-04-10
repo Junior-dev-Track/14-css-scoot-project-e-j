@@ -15,6 +15,7 @@ $light-yellow: #fff4df;
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -84,6 +85,132 @@ body {
   margin: 0 auto;
   padding-inline: 2rem;
 }
+
+/* ----------------------- */
+/* Navmenu */
+/* ----------------------- */
+.modal {
+  background: linear-gradient(rgb(0 0 0 /85%), rgb(0 0 0 / 75%));
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.modal--active {
+  position: fixed;
+  inset: 0;
+  opacity: 1;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding-block: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+.nav__logo {
+  background: url('../assets/logo.svg') no-repeat center/contain;
+  display: inline-block;
+  width: 7.5rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+
+.nav__links--mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--dark-navy);
+  text-align: left;
+  position: absolute;
+  top: 6rem;
+  left: -100%;
+  width: 25.6rem;
+  visibility: hidden;
+  opacity: 0;
+  height: calc(100vh - 6.4rem);
+  padding: 4rem 1.5rem 1.5rem;
+  transition: left 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.nav__links--mobile .link {
+  color: #fff;
+}
+
+.nav__links--mobile .link:hover {
+  color: var(--yellow);
+}
+
+.nav__links--active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+}
+
+.nav__hamburger {
+  background: url('../assets/icons/hamburger.svg') no-repeat center/cover;
+  width: 2rem;
+  height: 1.6rem;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.nav__hamburger:focus {
+  outline: 3px dashed var(--yellow);
+}
+
+.nav__hamburger--active {
+  background: url('../assets/icons/close.svg') no-repeat center/cover;
+}
+
+.nav__links {
+  display: none;
+}
+
+.nav__btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__hamburger {
+    display: none;
+  }
+
+  .nav__logo {
+    width: 10rem;
+    height: 3rem;
+    margin: 0;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4rem;
+  }
+
+  .nav__links li:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .nav__btn {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .nav__links--mobile {
+    display: none;
+  }
+}
+
+// BUTTON
 
 .btn {
   display: inline-block;

@@ -8,7 +8,28 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <!-- work in progress(tu peut le mettre ici ton nav barre) -->
+    <nav class="nav container">
+      <button type="button" class="nav__hamburger">
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <a href="index.html" class="logo nav__logo">
+        <span class="sr-only">Scoot</span>
+      </a>
+      <div class="nav__links--mobile">
+        <ul>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="locations.html" class="link">Location</a></li>
+          <li><a href="careers.html" class="link">Careers</a></li>
+        </ul>
+        <a class="btn nav__btn--mobile" href="#download">Get Scootin</a>
+      </div>
+      <ul class="nav__links links">
+        <li><a href="about.html" class="link">About</a></li>
+        <li><a href="locations.html" class="link">Location</a></li>
+        <li><a href="careers.html" class="link">Careers</a></li>
+      </ul>
+      <a class="btn nav__btn" href="#download">Get Scootin</a>
+    </nav>
     <!-- SCOOTER SHARING MADE SIMPLE SECTION -->
     <main id="main">
       <section class="hero">
@@ -136,12 +157,10 @@
           </div>
           <div class="cta__buttons">
             <a href="#"
-              ><img src="./assets/icons/app-store.svg" alt="App Store"
+              ><img src="./assets/icons/Apple.svg" alt="App Store"
             /></a>
             <a href="#"
-              ><img
-                src="./assets/icons/google-play.svg"
-                alt="Google Play Store"
+              ><img src="./assets/icons/GooglePlay.svg" alt="Google Play Store"
             /></a>
           </div>
         </div>
@@ -152,7 +171,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__links">
-          <img src="./assets/logo.svg" alt="scoot" />
+          <img src="./assets/scoot.svg" alt="scoot" />
           <ul class="footer__list">
             <li><a href="./about.html">About</a></li>
             <li><a href="./locations.html">Location</a></li>
