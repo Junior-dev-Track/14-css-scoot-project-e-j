@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400&family=Space+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400&family=Space+Mono:wght@400;700&display=swap");
 
 $yellow: #fcb72b;
 $dark-navy: #495567;
@@ -19,14 +19,14 @@ html {
 }
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   overflow-x: hidden;
 
   h1,
   h2,
   h3,
   h4 {
-    font-family: 'Space Mono', monospace;
+    font-family: "Space Mono", monospace;
     color: $dark-navy;
   }
 
@@ -113,7 +113,7 @@ body {
 }
 
 .nav__logo {
-  background: url('../assets/logo.svg') no-repeat center/contain;
+  background: url("../assets/logo.svg") no-repeat center/contain;
   display: inline-block;
   width: 7.5rem;
   height: 2rem;
@@ -153,7 +153,7 @@ body {
 }
 
 .nav__hamburger {
-  background: url('../assets/icons/hamburger.svg') no-repeat center/cover;
+  background: url("../assets/icons/hamburger.svg") no-repeat center/cover;
   width: 2rem;
   height: 1.6rem;
   display: inline-block;
@@ -166,7 +166,7 @@ body {
 }
 
 .nav__hamburger--active {
-  background: url('../assets/icons/close.svg') no-repeat center/cover;
+  background: url("../assets/icons/close.svg") no-repeat center/cover;
 }
 
 .nav__links {
@@ -214,7 +214,7 @@ body {
 
 .btn {
   display: inline-block;
-  font-family: 'Space Mono', sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.5rem;
@@ -248,7 +248,7 @@ body {
 .link {
   color: #929baa;
   display: inline-block;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   padding: 0.5rem;
   transition: 0.2s ease-out;
@@ -276,13 +276,13 @@ body {
 /* ----------------------- */
 
 .hero {
-  background: url('../assets/images/home-hero-desktop.jpg') no-repeat
+  background: url("../assets/images/home-hero-desktop.jpg") no-repeat
     center/cover;
   padding-block: 15rem;
   position: relative;
 
   &::after {
-    content: url('../assets/patterns/white-circles.svg');
+    content: url("../assets/patterns/white-circles.svg");
     position: absolute;
     right: -4.8rem;
     bottom: 16.4rem;
@@ -296,14 +296,14 @@ body {
   position: relative;
 
   &::before {
-    content: url('../assets/patterns/line.svg');
+    content: url("../assets/patterns/line.svg");
     position: absolute;
     right: 114%;
     bottom: 13.5rem;
   }
 
   &::after {
-    content: url('../assets/patterns/right-arrow.svg');
+    content: url("../assets/patterns/right-arrow.svg");
     position: absolute;
     right: -100%;
     bottom: 0;
@@ -327,7 +327,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .hero {
-    background: url('../assets/images/home-hero-tablet.jpg') no-repeat
+    background: url("../assets/images/home-hero-tablet.jpg") no-repeat
       center/cover;
     padding-block: 15rem;
     position: relative;
@@ -346,7 +346,7 @@ body {
   }
 
   .header--home__content::before {
-    content: '';
+    content: "";
   }
 
   .header--home__content::after {
@@ -372,7 +372,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .hero {
-    background: url('../assets/images/home-hero-mobile.jpg') no-repeat
+    background: url("../assets/images/home-hero-mobile.jpg") no-repeat
       center/cover;
     padding-block: 15rem;
     position: relative;
@@ -390,7 +390,7 @@ body {
   }
 
   .header--home__content::before {
-    content: '';
+    content: "";
   }
 
   .header--home__content::after {
@@ -434,7 +434,7 @@ body {
 }
 
 .steps .step__card::before {
-  content: '';
+  content: "";
   display: block;
   width: 100rem;
   background-color: #e5ecf4;
@@ -467,7 +467,7 @@ body {
   }
 
   .steps .step__card::before {
-    content: '';
+    content: "";
     width: 1.4rem;
     height: 22rem;
     background-color: #e5ecf4;
@@ -489,7 +489,7 @@ body {
   }
 
   .steps .step__card::before {
-    content: '';
+    content: "";
     display: none;
   }
 }
@@ -512,25 +512,25 @@ body {
 }
 
 .info::before {
-  content: url('../assets/patterns/left-downward-arrow.svg');
+  content: url("../assets/patterns/left-downward-arrow.svg");
   position: absolute;
 }
 
 .arrow-pos-2::before {
-  content: url('../assets/patterns/right-arrow.svg');
+  content: url("../assets/patterns/right-arrow.svg");
   position: absolute;
   top: 20rem;
   left: 0;
 }
 
 .arrow-pos-2::after {
-  content: url('../assets/patterns/circle.svg');
+  content: url("../assets/patterns/circle.svg");
   position: absolute;
   left: -40rem;
 }
 
 .info::after {
-  content: url('../assets/patterns/circle.svg');
+  content: url("../assets/patterns/circle.svg");
   position: absolute;
   top: 20rem;
   z-index: -1;
@@ -627,7 +627,7 @@ body {
 /* ----------------------- */
 
 .cta {
-  background: url('../assets/patterns/semi-circles.svg') no-repeat;
+  background: url("../assets/patterns/semi-circles.svg") no-repeat;
   background-position: 130% 100%;
   background-color: $dark-navy;
   padding-bottom: 10.2rem;
