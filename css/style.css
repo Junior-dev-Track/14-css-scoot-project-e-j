@@ -8,11 +8,13 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  min-width: 100vw;
 }
 
 body {
   font-family: "Lexend Deca", sans-serif;
   overflow-x: hidden;
+  min-width: 100vw;
 }
 body h1,
 body h2,
@@ -31,6 +33,7 @@ body h2 {
   font-weight: 700;
   line-height: 4.8rem;
   letter-spacing: -2.14px;
+  max-width: 44rem;
 }
 body h3 {
   font-size: 4rem;
@@ -46,6 +49,7 @@ body p {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
+  max-width: 100rem;
   color: #939caa;
 }
 body ul {
@@ -258,7 +262,7 @@ body img {
 
 .header--home__content {
   text-align: left;
-  max-width: 50rem;
+  max-width: 48rem;
   margin-left: 0;
   position: relative;
 }
@@ -364,6 +368,7 @@ body img {
   justify-content: space-between;
   align-items: stretch;
   gap: 3rem;
+  max-width: 115rem;
 }
 
 .steps .step__card {
@@ -445,6 +450,9 @@ body img {
 
 .position-container {
   position: relative;
+  min-width: 144rem;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 .info::before {
@@ -456,7 +464,7 @@ body img {
   content: url("../assets/patterns/right-arrow.svg");
   position: absolute;
   top: 20rem;
-  left: 0;
+  left: -15rem;
 }
 
 .arrow-pos-2::after {
@@ -470,21 +478,21 @@ body img {
   position: absolute;
   top: 20rem;
   z-index: -1;
-  right: -40rem;
+  right: -38rem;
 }
 
 .arrow-pos-1::before {
-  right: 0rem;
-  top: 45rem;
+  right: -4rem;
+  top: 50rem;
 }
 
 .arrow-pos-3::before {
-  right: -29rem;
-  top: 30rem;
+  right: -42.5rem;
+  top: 28rem;
 }
 
 .info img {
-  width: 100%;
+  width: 45rem;
   height: 45rem;
   border-radius: 50%;
 }
@@ -498,6 +506,11 @@ body img {
 }
 
 @media screen and (max-width: 1024px) {
+  .position-container {
+    min-width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .info {
     flex-direction: column;
     justify-content: center;
@@ -513,6 +526,11 @@ body img {
   }
 }
 @media screen and (max-width: 768px) {
+  .position-container {
+    min-width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   .info {
     overflow: hidden;
   }
