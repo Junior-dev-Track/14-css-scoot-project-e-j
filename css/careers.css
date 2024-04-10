@@ -239,4 +239,24 @@ body img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* ----------------------- */
+/* Hero */
+/* ----------------------- */
+.hero {
+  background: url("../assets/images/careers-locations-hero-desktop.jpg") no-repeat center/cover;
+  padding-block: 8.4rem;
+  position: relative;
+}
+.hero::after {
+  content: url("../assets/patterns/white-circles.svg");
+  position: absolute;
+  right: -3.5rem;
+  bottom: 7rem;
+}
+.hero h1 {
+  color: #fff;
+  margin-left: -0.5rem;
+  font-size: 50px;
 }/*# sourceMappingURL=careers.css.map */

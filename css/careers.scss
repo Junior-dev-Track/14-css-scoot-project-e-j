@@ -270,3 +270,54 @@ body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* ----------------------- */
+/* Hero */
+/* ----------------------- */
+
+.hero {
+  background: url("../assets/images/careers-locations-hero-desktop.jpg")
+    no-repeat center/cover;
+  padding-block: 8.4rem;
+  position: relative;
+
+  &::after {
+    content: url("../assets/patterns/white-circles.svg");
+    position: absolute;
+    right: -3.5rem;
+    bottom: 7rem;
+  }
+
+  h1 {
+    color: #fff;
+    margin-left: -0.5rem;
+    font-size: 50px;
+  }
+}
+
+// /* ----------------------- */
+// /* CARE TO JOIN*/
+// /* ----------------------- */
+
+// .join .container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: stretch;
+//   gap: 3rem;
+// }
+
+// .care-to-join {
+//   h2 {
+//     max-width: 10em;
+//   }
+
+//   p {
+//     padding-top: 2em;
+//     max-width: 30em;
+//     text-align: justify;
+//     margin-bot: 2em;
+//   }
+//   .btn join__btn {
+//     padding-top: 50em;
+//   }
+// }
