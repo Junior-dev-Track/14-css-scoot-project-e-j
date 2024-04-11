@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoot - Location</title>
+    <link rel="stylesheet" href="./css/location.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="modal"></div>
+
+    <nav class="nav container">
+      <button type="button" class="nav__hamburger">
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <a href="index.html" class="logo nav__logo">
+        <span class="sr-only">Scoot</span>
+      </a>
+      <div class="nav__links--mobile">
+        <ul>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="locations.html" class="link">Location</a></li>
+          <li><a href="careers.html" class="link">Careers</a></li>
+        </ul>
+        <a class="btn nav__btn--mobile" href="#download">Get Scootin</a>
+      </div>
+      <ul class="nav__links links">
+        <li><a href="about.html" class="link">About</a></li>
+        <li><a href="locations.html" class="link">Location</a></li>
+        <li><a href="careers.html" class="link">Careers</a></li>
+      </ul>
+      <a class="btn nav__btn" href="#download">Get Scootin</a>
+    </nav>
+
+    <header class="design-header careers">
+      <div class="container">
+        <div class="heading-container">
+          <h3>Locations</h3>
+        </div>
+      </div>
+      <img
+        class="white-circles"
+        src="./assets/patterns/white-circles.svg"
+        alt="" />
+    </header>
+
+    <main id="main">
+      <section class="map">
+        <div class="container">
+          <div class="map__inner">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="assets/images/world-map-desktop.png" />
+              <source
+                media="(min-width: 768px)"
+                srcset="assets/images/world-map-tablet.png" />
+              <source
+                media="(min-width: 400px)"
+                srcset="assets/images/world-map-mobile.png" />
+              <img src="./assets/images/world-map-mobile.png" alt="World Map" />
+            </picture>
+            <h4 class="map__text new-york">New York</h4>
+            <h4 class="map__text london">London</h4>
+            <h4 class="map__text jakarta">Jakarta</h4>
+            <h4 class="map__text yokohama">Yokohama</h4>
+          </div>
+
+          <div class="message__box">
+            <h2>Your city not listed?</h2>
+            <p>
+              If you’d like to see Scoot in your hometown, be sure to let us
+              know. We track requests and plan launches based on demand. Feel
+              free to message us by clicking the link or messaging us on social.
+            </p>
+            <a href="#" class="btn">Message Us</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta__title">
+            <h2>Sign up and Scoot off today</h2>
+          </div>
+          <div class="cta__buttons">
+            <a href="#"
+              ><img src="./assets/icons/app-store.svg" alt="App Store"
+            /></a>
+            <a href="#"
+              ><img
+                src="./assets/icons/google-play.svg"
+                alt="Google Play Store"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <img src="./assets/logo.svg" alt="scoot" />
+          <ul class="footer__list">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./locations.html">Location</a></li>
+            <li><a href="./careers.html">Careers</a></li>
+          </ul>
+          <div class="social__icons">
+            <img src="./assets/icons/facebook.svg" alt="" />
+            <img src="./assets/icons/twitter.svg" alt="" />
+            <img src="./assets/icons/instagram.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
