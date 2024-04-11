@@ -254,7 +254,7 @@ body img {
 
 .map__text {
   position: absolute;
-  background-color: var(--yellow);
+  background-color: #fcb72b;
   padding: 1.6rem 5.4rem;
 }
 
@@ -266,7 +266,7 @@ body img {
   width: 0;
   height: 0;
   border: 16px solid transparent;
-  border-top-color: var(--yellow);
+  border-top-color: #fcb72b;
 }
 
 .new-york {
