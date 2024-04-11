@@ -248,6 +248,7 @@ body img {
   background: url("../assets/images/careers-locations-hero-desktop.jpg") no-repeat center/cover;
   padding-block: 8.4rem;
   position: relative;
+  height: 20rem;
 }
 .hero::after {
   content: url("../assets/patterns/white-circles.svg");
@@ -258,5 +259,222 @@ body img {
 .hero h1 {
   color: #fff;
   margin-left: -0.5rem;
-  font-size: 50px;
+  font-size: 5rem;
+  padding-top: 50rem;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__container .box {
+  width: 110rem;
+  height: 12.8rem;
+  background-color: #e5ecf4;
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+}
+.contact__container .box .box__text {
+  position: absolute;
+  top: 3.35rem;
+  left: 4rem;
+}
+.contact__container .box h2 {
+  height: auto;
+  color: #495567;
+  font-family: "Space Mono";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: 0, 107rem;
+}
+.contact__container .box .contact1 {
+  width: 20.6rem;
+}
+.contact__container .box .contact2 {
+  width: 19.2rem;
+}
+.contact__container .box .contact3 {
+  width: 31.5rem;
+}
+.contact__container .box .contact4 {
+  width: 22em;
+}
+.contact__container .box .contact5 {
+  width: 22rem;
+}
+.contact__container .box .contact6 {
+  width: 13.8rem;
+}
+.contact__container .box p {
+  height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Lexend Deca";
+  line-height: 2.5rem;
+  padding-top: 0.8rem;
+}
+.contact__container .box .btn {
+  width: 18rem;
+  height: 5.3rem;
+  position: absolute;
+  left: 80rem;
+  top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact__container {
+    width: 64.9rem;
+    height: 44.8rem;
+  }
+}
+/* ----------------------- */
+/* CTA section */
+/* ----------------------- */
+.cta {
+  background: url("../assets/patterns/semi-circles.svg") no-repeat;
+  background-position: 130% 100%;
+  background-color: #495567;
+  padding-bottom: 10.2rem;
+  margin-top: 15rem;
+}
+
+.cta .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta .cta__title {
+  flex-basis: 45rem;
+}
+
+.cta__title h2 {
+  color: #fff;
+}
+
+.cta .cta__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .cta {
+    background-position: 90% 100%;
+    padding-bottom: 10.2rem;
+  }
+  .cta .container {
+    flex-direction: column;
+  }
+  .cta .cta__title {
+    flex-basis: 10rem;
+    width: 45rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .cta__title h2 {
+    color: #fff;
+  }
+  .cta .cta__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cta .cta__title {
+    width: 30rem;
+  }
+  .cta .cta__title h2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
+/* ----------------------- */
+/* footer */
+/* ----------------------- */
+.footer {
+  background-color: #333a44;
+  padding: 6.4rem 0 8.8rem 0;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer__list {
+  text-align: center;
+  margin-bottom: 8.5rem;
+}
+
+.footer__list li {
+  margin-bottom: 1.6rem;
+}
+
+.footer__list li a {
+  font-size: 1.5rem;
+  transition: color 0.25s ease-out;
+}
+
+.footer__list li a:hover {
+  color: #fcb72b;
+}
+
+.footer__links .social__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.footer {
+  padding: 3.5rem 0 3.2rem 0;
+}
+
+.footer__links {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 4rem;
+}
+
+.footer__list li {
+  margin-bottom: 0;
+}
+
+.social__icons {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__links {
+    flex-direction: column;
+    margin-top: 6.4rem;
+  }
+  .footer__list {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .social__icons {
+    margin-left: 0;
+    margin-block: 8.5rem;
+  }
 }/*# sourceMappingURL=careers.css.map */
