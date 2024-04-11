@@ -129,7 +129,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: var(--dark-navy);
+  background-color: $dark-navy;
   text-align: left;
   position: absolute;
   top: 6rem;
@@ -147,7 +147,7 @@ body {
 }
 
 .nav__links--mobile .link:hover {
-  color: var(--yellow);
+  color: $yellow;
 }
 
 .nav__links--active {

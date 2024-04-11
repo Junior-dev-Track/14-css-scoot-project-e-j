@@ -112,7 +112,7 @@ body img {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: var(--dark-navy);
+  background-color: #495567;
   text-align: left;
   position: absolute;
   top: 6rem;
@@ -130,7 +130,7 @@ body img {
 }
 
 .nav__links--mobile .link:hover {
-  color: var(--yellow);
+  color: #fcb72b;
 }
 
 .nav__links--active {
