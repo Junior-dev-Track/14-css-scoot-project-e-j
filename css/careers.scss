@@ -9,7 +9,7 @@ $light-yellow: #fff4df;
 
 * {
   margin: 0;
-  padding: 0;
+  // padding: 0;
   box-sizing: border-box;
 }
 
@@ -43,6 +43,7 @@ body {
     font-weight: 700;
     line-height: 4.8rem;
     letter-spacing: -2.14px;
+    max-width: 44rem;
   }
 
   h3 {
@@ -61,6 +62,7 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.5rem;
+    max-width: 100rem;
     color: $dim-grey;
   }
 
@@ -83,7 +85,7 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 110rem;
   margin: 0 auto;
   padding-inline: 2rem;
 }
@@ -91,6 +93,7 @@ body {
 /* ----------------------- */
 /* Navmenu */
 /* ----------------------- */
+
 .modal {
   background: linear-gradient(rgb(0 0 0 /85%), rgb(0 0 0 / 75%));
   opacity: 0;
@@ -103,6 +106,7 @@ body {
   opacity: 1;
   z-index: 1;
 }
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -111,7 +115,36 @@ body {
   background: #fff;
   padding-block: 2rem;
   z-index: 1;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 110rem;
+  // margin: 0 auto;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: 9999;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    right: -100vw;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+  }
+}
+
+.overlay-active {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
 }
 
 .nav__logo {
@@ -126,15 +159,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background-color: $dark-navy;
   text-align: left;
   position: absolute;
-  top: 8.7rem;
+  top: 6rem;
   left: -100%;
   width: 25.6rem;
   visibility: hidden;
-  opacity: 0;
   height: calc(100vh - 6.4rem);
   padding: 4rem 1.5rem 1.5rem;
   transition: left 0.2s ease-out, opacity 0.2s ease-out;
@@ -208,6 +240,12 @@ body {
   }
 
   .nav__links--mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 765px) {
+  .nav .nav__btn {
     display: none;
   }
 }
@@ -298,7 +336,11 @@ body {
 .design-header .white-circles {
   position: absolute;
   top: 15rem;
-  right: -3rem;
+  right: -5rem;
+}
+
+.heading-container {
+  padding-top: 8rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -312,7 +354,7 @@ body {
 }
 
 /* ----------------------- */
-/* Info */
+/* WHY JOIN US*/
 /* ----------------------- */
 
 .info {
@@ -323,17 +365,20 @@ body {
   gap: 22rem;
   padding: 20rem 0 16rem 0;
 }
-
+.values h2 {
+  margin-left: 31rem;
+}
 .position-container {
   position: relative;
   min-width: 144rem;
   max-width: 144rem;
-  margin: 0 auto;
+  margin: -7rem auto 0 auto;
 }
 
 .info::before {
-  content: url("../assets/patterns/left-upward-arrow.svg");
+  content: url("../assets/patterns/left-downward-arrow.svg");
   position: absolute;
+  padding-top: 4rem;
 }
 
 .arrow-pos-2::before {
@@ -381,7 +426,7 @@ body {
   flex-direction: row-reverse;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .position-container {
     min-width: auto;
     max-width: 100%;
@@ -396,6 +441,11 @@ body {
     gap: 5rem;
   }
 
+  .info::before {
+    left: -25rem;
+    margin-top: 3rem;
+  }
+
   .info img {
     width: 45rem;
   }
@@ -403,17 +453,26 @@ body {
   .info__content {
     max-width: 50rem;
   }
+
+  .values h2 {
+    margin-left: 13rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .position-container {
     min-width: auto;
     max-width: 100%;
-    margin: 0 auto;
+    margin: -8rem auto 0 auto;
   }
   .info {
     overflow: hidden;
   }
+
+  .info::before {
+    padding-top: 0rem;
+  }
+
   .info::after {
     display: none;
   }
@@ -461,11 +520,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 12rem;
 
   .box {
     width: 114rem;
     height: 12.8rem;
-    background-color: $light-grey;
+    background-color: $snow;
     margin-bottom: 2rem;
     position: relative;
     display: flex;
@@ -511,6 +571,7 @@ body {
     }
 
     p {
+      color: $dark-navy;
       height: 2.5rem;
       font-size: 1.5rem;
       font-weight: 400;
@@ -527,29 +588,168 @@ body {
       top: 0.5rem;
       padding-top: 1.3rem;
     }
+
+    .btn1 {
+      color: $snow;
+    }
   }
 }
 
-@media screen and (max-width: 768px) {
+//tablette
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__container {
-    width: 64.9rem;
-    height: 44.8rem;
+    margin-top: 10rem;
+
+    .box {
+      max-width: 68.9rem;
+      max-height: 12.8rem;
+    }
+
+    .btn1 {
+      display: inline-block;
+      font-family: "Space Mono", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      text-align: center;
+      background-color: $yellow;
+      color: $snow;
+      border: 1px solid transparent;
+      padding: 1rem 6rem;
+      text-decoration: none;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      position: absolute;
+      left: 43rem;
+      top: 1rem;
+
+      &:hover {
+        border-color: $snow;
+        background-color: transparent;
+        color: $snow;
+      }
+    }
   }
 }
 
-// @media screen and (max-width: 1024px) {
-//   .contact__container .box {
-//     width: 100%;
-//     max-width: 40rem;
-//   }
-// }
+// phone
+@media screen and (max-width: 767px) {
+  .contact__container {
+    margin-top: 12rem;
 
-// @media screen and (max-width: 375px) {
-//   .contact__container .box {
-//     width: 100%;
-//     max-width: 20rem; /* Vous pouvez ajuster cette valeur selon vos besoins */
-//   }
-// }
+    .box {
+      width: 31.1rem;
+      height: 19rem;
+
+      h2 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.001rem;
+      }
+    }
+
+    .box__text {
+      width: 24.7rem;
+      height: 5.3rem;
+      text-align: center;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      letter-spacing: 0.08rem;
+    }
+
+    .contact1 {
+      font-size: 1.8rem;
+      position: absolute;
+      left: 1.3rem;
+    }
+
+    .p1 {
+      position: absolute;
+      top: 3rem;
+      left: 3.8rem;
+    }
+
+    .contact2 {
+      position: absolute;
+      left: 2rem;
+    }
+
+    .p2 {
+      position: absolute;
+      top: 3rem;
+      left: 4.5rem;
+    }
+
+    .contact3 {
+      position: absolute;
+      left: -4rem;
+    }
+
+    .p3 {
+      position: absolute;
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    .contact4 {
+      position: absolute;
+      left: -8.5rem;
+    }
+
+    .p4 {
+      position: absolute;
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    .contact5 {
+      position: absolute;
+      left: 0.8rem;
+    }
+
+    .p5 {
+      position: absolute;
+      top: 3rem;
+      left: 4rem;
+    }
+
+    .contact6 {
+      position: absolute;
+      left: 4rem;
+    }
+
+    .p6 {
+      position: absolute;
+      top: 3rem;
+      left: 1.5rem;
+    }
+
+    .btn1 {
+      display: inline-block;
+      font-family: "Space Mono", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+      text-align: center;
+      background-color: $yellow;
+      color: $snow;
+      border: 1px solid transparent;
+      padding: 1.2rem 10rem;
+      text-decoration: none;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      position: absolute;
+      top: 8rem;
+      left: -1rem;
+
+      &:hover {
+        border-color: $snow;
+        background-color: transparent;
+        color: $snow;
+      }
+    }
+  }
+}
 
 /* ----------------------- */
 /* CTA section */
@@ -784,7 +984,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .footer__links {
     flex-direction: column;
     margin-top: 6.4rem;
