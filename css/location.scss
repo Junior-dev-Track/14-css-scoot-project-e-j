@@ -214,6 +214,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1px) and (max-width: 765px) {
+  .nav .nav__btn {
+    display: none;
+  }
+}
+
 // BUTTON
 
 .btn {
@@ -340,16 +346,25 @@ body {
   .cta {
     background-position: 50% 100%;
   }
-
-  // .cta .cta__title {
-  //   width: 30rem;
-  // }
 }
 
 @media screen and (max-width: 375px) {
+  .cta {
+    background: url('../assets/patterns/semi-circles.svg') no-repeat;
+    background-position: 75% 100%;
+    background-color: $dark-navy;
+    padding-bottom: 10.2rem;
+  }
+
+  .cta .cta__title {
+    margin-bottom: 1rem;
+  }
+
   .cta .cta__title h2 {
     font-size: 3.2rem;
     line-height: 3.2rem;
+    max-width: 36rem;
+    margin-left: 5rem;
   }
 }
 
@@ -436,6 +451,9 @@ body {
     flex-direction: column;
     margin-left: 0;
   }
+  .footer .footer__list {
+    padding: 0;
+  }
 
   .social__icons {
     margin-left: 0;
@@ -468,12 +486,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .design-header .white-circles {
-    display: none;
+  .design-header {
+    padding-block: 6rem;
   }
 
-  .design-header .heading-container {
-    text-align: center;
+  .design-header h3 {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    max-width: 36rem;
   }
 }
 
@@ -580,8 +600,33 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+.mobile-map {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .message__box h2 {
+    max-width: 50rem;
+    font-size: 3.2rem;
+  }
+
+  .message__box p {
+    max-width: 31rem;
+    font-size: 1.5rem;
+  }
+
   .map__text {
     display: none;
+  }
+  .mobile-map {
+    margin-top: 2rem;
+    display: block;
+  }
+  .mobile-map h4 {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: $light-yellow;
+    margin-top: 2rem;
   }
 }
