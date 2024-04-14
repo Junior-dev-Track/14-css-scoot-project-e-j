@@ -924,10 +924,10 @@ body {
 .social__icons {
   cursor: pointer;
   margin-left: auto;
+}
 
-  &:hover {
-    color: white;
-  }
+.social__iconhover:hover {
+  fill: $light-grey;
 }
 
 @media screen and (max-width: 375px) {
@@ -947,5 +947,8 @@ body {
   .social__icons {
     margin-left: 0;
     margin-block: 8.5rem;
+  }
+  .social__iconhover:hover {
+    fill: $light-grey;
   }
 }

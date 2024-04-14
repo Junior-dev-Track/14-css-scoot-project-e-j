@@ -130,7 +130,7 @@ body {
   background-color: $dark-navy;
   text-align: left;
   position: absolute;
-  top: 8.7rem;
+  top: 6rem;
   left: -100%;
   width: 25.6rem;
   visibility: hidden;
@@ -209,6 +209,16 @@ body {
 
   .nav__links--mobile {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 700px) {
+  .nav .nav__btn {
+    display: none;
+  }
+  .nav__logo {
+    // margin-right: 13rem;
+    margin: 0 auto;
   }
 }
 
@@ -345,6 +355,27 @@ body {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .cta {
+    background: url('../assets/patterns/semi-circles.svg') no-repeat;
+    background-position: 77% 100%;
+    background-color: $dark-navy;
+    background-attachment: absolute;
+    padding-bottom: 10.2rem;
+  }
+  .cta .cta__title {
+    margin-bottom: 0;
+  }
+  .cta .cta__title h2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    max-width: 30rem;
+  }
+  .cta .cta__buttons {
+    width: 25.6rem;
+  }
+}
+
 /* ----------------------- */
 /* footer */
 /* ----------------------- */
@@ -412,10 +443,10 @@ body {
 .social__icons {
   cursor: pointer;
   margin-left: auto;
+}
 
-  &:hover {
-    color: white;
-  }
+.social__iconhover:hover {
+  fill: $light-grey;
 }
 
 @media screen and (max-width: 768px) {
@@ -462,11 +493,23 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .design-header h3 {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    letter-spacing: -1.7857142686843872px;
+  }
+}
+
+@media screen and (max-width: 375px) {
   .design-header .white-circles {
     display: none;
   }
-
-  .design-header .heading-container {
+  .design-header h3 {
+    // Make this selector as specific as the one in the first media query
+    font-family: Space Mono;
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -1.7857142686843872px;
     text-align: center;
   }
 }

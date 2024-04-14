@@ -113,7 +113,7 @@ body img {
   background-color: #495567;
   text-align: left;
   position: absolute;
-  top: 8.7rem;
+  top: 6rem;
   left: -100%;
   width: 25.6rem;
   visibility: hidden;
@@ -187,6 +187,14 @@ body img {
   }
   .nav__links--mobile {
     display: none;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 700px) {
+  .nav .nav__btn {
+    display: none;
+  }
+  .nav__logo {
+    margin: 0 auto;
   }
 }
 .btn {
@@ -307,6 +315,26 @@ body img {
     line-height: 3.2rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .cta {
+    background: url("../assets/patterns/semi-circles.svg") no-repeat;
+    background-position: 77% 100%;
+    background-color: #495567;
+    background-attachment: absolute;
+    padding-bottom: 10.2rem;
+  }
+  .cta .cta__title {
+    margin-bottom: 0;
+  }
+  .cta .cta__title h2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    max-width: 30rem;
+  }
+  .cta .cta__buttons {
+    width: 25.6rem;
+  }
+}
 /* ----------------------- */
 /* footer */
 /* ----------------------- */
@@ -375,8 +403,9 @@ body img {
   cursor: pointer;
   margin-left: auto;
 }
-.social__icons:hover {
-  color: white;
+
+.social__iconhover:hover {
+  fill: #e5ecf4;
 }
 
 @media screen and (max-width: 768px) {
@@ -420,10 +449,21 @@ body img {
 }
 
 @media screen and (max-width: 768px) {
+  .design-header h3 {
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    letter-spacing: -1.7857142687px;
+  }
+}
+@media screen and (max-width: 375px) {
   .design-header .white-circles {
     display: none;
   }
-  .design-header .heading-container {
+  .design-header h3 {
+    font-family: Space Mono;
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -1.7857142687px;
     text-align: center;
   }
 }

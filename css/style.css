@@ -815,8 +815,9 @@ body img {
   cursor: pointer;
   margin-left: auto;
 }
-.social__icons:hover {
-  color: white;
+
+.social__iconhover:hover {
+  fill: #e5ecf4;
 }
 
 @media screen and (max-width: 375px) {
@@ -834,5 +835,8 @@ body img {
   .social__icons {
     margin-left: 0;
     margin-block: 8.5rem;
+  }
+  .social__iconhover:hover {
+    fill: #e5ecf4;
   }
 }/*# sourceMappingURL=style.css.map */

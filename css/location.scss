@@ -351,20 +351,22 @@ body {
 @media screen and (max-width: 375px) {
   .cta {
     background: url('../assets/patterns/semi-circles.svg') no-repeat;
-    background-position: 75% 100%;
+    background-position: 77% 100%;
     background-color: $dark-navy;
+    background-attachment: absolute;
     padding-bottom: 10.2rem;
   }
-
   .cta .cta__title {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
-
   .cta .cta__title h2 {
     font-size: 3.2rem;
     line-height: 3.2rem;
-    max-width: 36rem;
-    margin-left: 5rem;
+    max-width: 30rem;
+    margin-left: 8rem;
+  }
+  .cta .cta__buttons {
+    width: 25.6rem;
   }
 }
 
@@ -435,10 +437,10 @@ body {
 .social__icons {
   cursor: pointer;
   margin-left: auto;
+}
 
-  &:hover {
-    color: white;
-  }
+.social__iconhover:hover {
+  fill: $light-grey;
 }
 
 @media screen and (max-width: 375px) {
@@ -496,7 +498,17 @@ body {
     max-width: 36rem;
   }
 }
-
+@media screen and (max-width: 375px) {
+  .white-circles {
+    display: none;
+  }
+  .design-header h3 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: -1.7857142686843872px;
+    text-align: center;
+  }
+}
 /* ----------------------- */
 /* Locations */
 /* ----------------------- */
