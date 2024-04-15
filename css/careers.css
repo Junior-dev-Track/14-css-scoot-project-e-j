@@ -408,7 +408,7 @@ body img {
     max-width: 1rem;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .position-container {
     min-width: auto;
     max-width: 100%;
@@ -449,25 +449,9 @@ body img {
   }
 }
 @media screen and (max-width: 376px) {
-  .position-container .info__content h2 {
+  .info .info__content h2 {
     font-size: 3.2rem;
     line-height: 3.2rem;
-    text-align: center;
-    margin-left: 1rem;
-    min-width: 30rem;
-    max-width: 1rem;
-  }
-  .position-container .info__content p {
-    font-size: 15px;
-    line-height: 25px;
-    text-align: center;
-    min-width: 1rem;
-  }
-  .info .info__content p {
-    text-align: center;
-    font-size: 15px;
-    line-height: 25px;
-    max-width: 30rem;
   }
 }
 .contact__container {
