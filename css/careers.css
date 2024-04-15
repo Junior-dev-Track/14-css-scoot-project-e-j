@@ -395,6 +395,18 @@ body img {
   .info__content {
     max-width: 50rem;
   }
+  .info::before {
+    padding-right: 34rem;
+    padding-top: 2.5rem;
+  }
+  .info .info__content h2 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    max-width: 50rem;
+  }
+  .info .info__contentp p {
+    max-width: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .position-container {
@@ -436,7 +448,7 @@ body img {
     top: 20rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .position-container .info__content h2 {
     font-size: 3.2rem;
     line-height: 3.2rem;
