@@ -217,8 +217,7 @@ body {
     display: none;
   }
   .nav__logo {
-    // margin-right: 13rem;
-    margin: 0 auto;
+    margin: 0 auto 0 calc(38% - 2rem);
   }
 }
 

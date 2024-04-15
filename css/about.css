@@ -194,7 +194,7 @@ body img {
     display: none;
   }
   .nav__logo {
-    margin: 0 auto;
+    margin: 0 auto 0 calc(38% - 2rem);
   }
 }
 .btn {

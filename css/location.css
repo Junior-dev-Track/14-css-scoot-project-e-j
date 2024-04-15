@@ -119,7 +119,6 @@ body img {
   left: -100%;
   width: 25.6rem;
   visibility: hidden;
-  opacity: 0;
   height: calc(100vh - 6.4rem);
   padding: 4rem 1.5rem 1.5rem;
   transition: left 0.2s ease-out, opacity 0.2s ease-out;
@@ -191,9 +190,12 @@ body img {
     display: none;
   }
 }
-@media screen and (min-width: 1px) and (max-width: 765px) {
+@media screen and (min-width: 1px) and (max-width: 375px) {
   .nav .nav__btn {
     display: none;
+  }
+  .nav__logo {
+    margin: 0 auto 0 calc(38% - 2rem);
   }
 }
 .btn {

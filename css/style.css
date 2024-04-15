@@ -220,6 +220,9 @@ body img {
   .nav .nav__btn {
     display: none;
   }
+  .nav__logo {
+    margin: 0 auto 0 calc(38% - 2rem);
+  }
   ul {
     margin-left: -13.5rem;
   }
