@@ -289,8 +289,9 @@ body {
 
 .cta {
   background: url('../assets/patterns/semi-circles.svg') no-repeat;
-  background-position: 130% 100%;
+  background-position: 160% 100%;
   background-color: $dark-navy;
+  background-attachment: absolute;
   padding-bottom: 10.2rem;
 }
 

@@ -227,7 +227,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-left: 4rem;
   }
 
   .nav__links li:not(:last-child) {
@@ -773,7 +772,7 @@ body {
 
 .cta {
   background: url('../assets/patterns/semi-circles.svg') no-repeat;
-  background-position: 150% 100%;
+  background-position: 160% 100%;
   background-color: $dark-navy;
   background-attachment: absolute;
   padding-bottom: 10.2rem;
@@ -833,10 +832,6 @@ body {
   .cta {
     background-position: 50% 100%;
   }
-
-  // .cta .cta__title {
-  //   width: 30rem;
-  // }
 }
 
 @media screen and (max-width: 375px) {

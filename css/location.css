@@ -257,8 +257,9 @@ body img {
 /* ----------------------- */
 .cta {
   background: url("../assets/patterns/semi-circles.svg") no-repeat;
-  background-position: 130% 100%;
+  background-position: 160% 100%;
   background-color: #495567;
+  background-attachment: absolute;
   padding-bottom: 10.2rem;
 }
 
