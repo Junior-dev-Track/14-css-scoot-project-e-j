@@ -436,17 +436,13 @@ body {
     max-width: 50rem;
   }
   .info::before {
-    padding-right: 34rem;
-    padding-top: 2.5rem;
+    left: -26rem;
+    top: -50rem;
   }
   .info .info__content h2 {
     font-size: 4.8rem;
     line-height: 4.8rem;
     max-width: 50rem;
-  }
-
-  .info .info__contentp p {
-    max-width: 1rem;
   }
 }
 
@@ -503,8 +499,12 @@ body {
     font-size: 3.2rem;
     line-height: 3.2rem;
   }
-
+  .info::before {
+    left: 3rem;
+    top: 36rem;
+  }
   .info .info__contentp p {
+    max-width: 1rem;
   }
 }
 
@@ -811,6 +811,7 @@ body {
 @media screen and (max-width: 768px) {
   .cta {
     background-position: 50% 100%;
+    margin-top: 10rem;
   }
 }
 
@@ -987,7 +988,7 @@ body {
   fill: $light-grey;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .footer__links {
     flex-direction: column;
     margin-top: 6.4rem;
