@@ -503,8 +503,13 @@ body {
     left: 3rem;
     top: 36rem;
   }
-  .info .info__contentp p {
-    max-width: 1rem;
+
+  .info__content h2 {
+    min-width: 1rem;
+  }
+
+  .info__content p {
+    min-width: 25rem;
   }
 }
 
