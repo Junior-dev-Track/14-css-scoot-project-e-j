@@ -16,13 +16,11 @@ $light-yellow: #fff4df;
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  min-width: 100vw;
 }
 
 body {
   font-family: 'Lexend Deca', sans-serif;
   overflow-x: hidden;
-  min-width: 100vw;
 
   h1,
   h2,
@@ -288,7 +286,7 @@ body {
 
 .cta {
   background: url('../assets/patterns/semi-circles.svg') no-repeat;
-  background-position: 160% 100%;
+  background-position: 130% 100%;
   background-color: $dark-navy;
   padding-bottom: 10.2rem;
 }
@@ -344,13 +342,8 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .cta .cta__title {
-    width: 30rem;
-  }
-
-  .cta .cta__title h2 {
-    font-size: 3.2rem;
-    line-height: 3.2rem;
+  .cta {
+    background-position: 50% 100%;
   }
 }
 
@@ -369,6 +362,7 @@ body {
     font-size: 3.2rem;
     line-height: 3.2rem;
     max-width: 30rem;
+    margin-left: 8rem;
   }
   .cta .cta__buttons {
     width: 25.6rem;
@@ -448,7 +442,7 @@ body {
   fill: $light-grey;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
   .footer__links {
     flex-direction: column;
     margin-top: 6.4rem;
@@ -473,6 +467,7 @@ body {
   background-size: cover;
   background-position: center;
   padding-block: 7.2rem;
+  position: relative;
 }
 
 .design-header .container {
@@ -487,8 +482,12 @@ body {
 
 .design-header .white-circles {
   position: absolute;
-  top: 15rem;
+  top: 7rem;
   right: -3rem;
+}
+
+.white-circles {
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
