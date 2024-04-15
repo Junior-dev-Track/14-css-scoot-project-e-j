@@ -703,6 +703,10 @@ body img {
   transition: background 0.25s ease-in-out;
 }
 
+.accordion__item.active img {
+  transform: rotate(180deg);
+}
+
 .accordion__item:hover {
   background-color: #fff4df;
 }
