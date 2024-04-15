@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400&family=Space+Mono:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400&family=Space+Mono:wght@400;700&display=swap');
 
 $yellow: #fcb72b;
 $dark-navy: #495567;
@@ -19,14 +19,14 @@ html {
 }
 
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   overflow-x: hidden;
 
   h1,
   h2,
   h3,
   h4 {
-    font-family: "Space Mono", monospace;
+    font-family: 'Space Mono', monospace;
     color: $dark-navy;
   }
 
@@ -101,6 +101,7 @@ body {
   opacity: 1;
   z-index: 1;
 }
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -109,11 +110,30 @@ body {
   background: #fff;
   padding-block: 2rem;
   z-index: 1;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 110rem;
+  // margin: 0 auto;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: 9999;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    right: -100vw;
+    bottom: 0;
+    background: #fff;
+    z-index: -1;
+  }
 }
 
 .nav__logo {
-  background: url("../assets/logo.svg") no-repeat center/contain;
+  background: url('../assets/logo.svg') no-repeat center/contain;
   display: inline-block;
   width: 7.5rem;
   height: 2rem;
@@ -153,7 +173,7 @@ body {
 }
 
 .nav__hamburger {
-  background: url("../assets/icons/hamburger.svg") no-repeat center/cover;
+  background: url('../assets/icons/hamburger.svg') no-repeat center/cover;
   width: 2rem;
   height: 1.6rem;
   display: inline-block;
@@ -166,7 +186,7 @@ body {
 }
 
 .nav__hamburger--active {
-  background: url("../assets/icons/close.svg") no-repeat center/cover;
+  background: url('../assets/icons/close.svg') no-repeat center/cover;
 }
 
 .nav__links {
@@ -223,7 +243,7 @@ body {
 
 .btn {
   display: inline-block;
-  font-family: "Space Mono", sans-serif;
+  font-family: 'Space Mono', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2.5rem;
@@ -257,7 +277,7 @@ body {
 .link {
   color: #929baa;
   display: inline-block;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 1.5rem;
   padding: 0.5rem;
   transition: 0.2s ease-out;
@@ -284,12 +304,13 @@ body {
 /* Header Section */
 /* ----------------------- */
 .design-header {
-  background: url("../assets/images/careers-locations-hero-desktop.jpg")
+  background: url('../assets/images/careers-locations-hero-desktop.jpg')
     no-repeat;
   background-size: cover;
   background-position: center;
   padding-block: 7.2rem;
   position: relative;
+  margin-top: 8.7rem;
 }
 
 .design-header .container {
@@ -299,6 +320,7 @@ body {
 }
 
 .design-header h3 {
+  margin-left: 4rem;
   color: #fff;
 }
 
@@ -359,25 +381,25 @@ body {
 }
 
 .info::before {
-  content: url("../assets/patterns/left-downward-arrow.svg");
+  content: url('../assets/patterns/left-downward-arrow.svg');
   position: absolute;
 }
 
 .arrow-pos-2::before {
-  content: url("../assets/patterns/right-arrow.svg");
+  content: url('../assets/patterns/right-arrow.svg');
   position: absolute;
   top: 20rem;
   left: -15rem;
 }
 
 .arrow-pos-2::after {
-  content: url("../assets/patterns/circle.svg");
+  content: url('../assets/patterns/circle.svg');
   position: absolute;
   left: -40rem;
 }
 
 .info::after {
-  content: url("../assets/patterns/circle.svg");
+  content: url('../assets/patterns/circle.svg');
   position: absolute;
   top: 20rem;
   z-index: -1;
@@ -540,7 +562,7 @@ body {
     h2 {
       height: auto;
       color: $dark-navy;
-      font-family: "Space Mono";
+      font-family: 'Space Mono';
       font-size: 2.4rem;
       font-weight: 700;
       line-height: 2.8rem;
@@ -576,7 +598,7 @@ body {
       height: 2.5rem;
       font-size: 1.5rem;
       font-weight: 400;
-      font-family: "Lexend Deca";
+      font-family: 'Lexend Deca';
       line-height: 2.5rem;
       padding-top: 0.8rem;
     }
@@ -608,7 +630,7 @@ body {
 
     .btn1 {
       display: inline-block;
-      font-family: "Space Mono", sans-serif;
+      font-family: 'Space Mono', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
       line-height: 2.5rem;
@@ -727,7 +749,7 @@ body {
 
     .btn1 {
       display: inline-block;
-      font-family: "Space Mono", sans-serif;
+      font-family: 'Space Mono', sans-serif;
       font-size: 1.5rem;
       font-weight: 700;
       line-height: 2.5rem;
@@ -757,7 +779,7 @@ body {
 /* ----------------------- */
 
 .cta {
-  background: url("../assets/patterns/semi-circles.svg") no-repeat;
+  background: url('../assets/patterns/semi-circles.svg') no-repeat;
   background-position: 130% 100%;
   background-color: $dark-navy;
   padding-bottom: 10.2rem;
@@ -823,7 +845,7 @@ body {
 
 @media screen and (max-width: 375px) {
   .cta {
-    background: url("../assets/patterns/semi-circles.svg") no-repeat;
+    background: url('../assets/patterns/semi-circles.svg') no-repeat;
     background-position: 77% 100%;
     background-color: $dark-navy;
     background-attachment: absolute;
@@ -898,7 +920,7 @@ body {
 
 .values .card-container .card .img-box .number__box p {
   font-size: 2.4rem;
-  font-family: "Space Mono", sans-serif;
+  font-family: 'Space Mono', sans-serif;
   font-weight: 700;
   color: $dark-navy;
 }
