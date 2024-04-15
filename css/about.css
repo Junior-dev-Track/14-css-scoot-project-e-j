@@ -92,7 +92,24 @@ body img {
   background: #fff;
   padding-block: 2rem;
   z-index: 1;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 110rem;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: 9999;
+}
+.nav:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  right: -100vw;
+  bottom: 0;
+  background: #fff;
+  z-index: -1;
 }
 
 .nav__logo {
@@ -427,6 +444,7 @@ body img {
   background-position: center;
   padding-block: 7.2rem;
   position: relative;
+  margin-top: 8.7rem;
 }
 
 .design-header .container {
